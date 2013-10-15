@@ -1,8 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://assignitapp.github.io/blog/2011/06/05/the-launch/</loc>
+        <lastmod>2013-10-14T19:15:40-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://assignitapp.github.io/blog/2012/06/01/updates/</loc>
+        <lastmod>2013-10-14T19:16:46-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://assignitapp.github.io/blog/2012/07/07/the-outage-postmortem-for-july-6-2012/
+        </loc>
+        <lastmod>2013-10-14T19:22:21-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://assignitapp.github.io/blog/2012/08/11/the-outage-and-upgrade-postmortem-for-august-11-2012/
+        </loc>
+        <lastmod>2013-10-14T19:29:38-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://assignitapp.github.io/blog/2012/11/28/new-features-of-assign-it-app/</loc>
+        <lastmod>2013-10-14T19:35:38-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://assignitapp.github.io/</loc>
-        <lastmod>2013-10-14T19:01:05-05:00</lastmod>
+        <lastmod>2013-10-14T19:35:38-05:00</lastmod>
     </url>
     <url>
         <loc>http://assignitapp.github.io/robots.txt</loc>
@@ -10,6 +34,6 @@
     </url>
     <url>
         <loc>http://assignitapp.github.io/blog/archives/</loc>
-        <lastmod>2013-10-14T19:01:05-05:00</lastmod>
+        <lastmod>2013-10-14T19:35:38-05:00</lastmod>
     </url>
 </urlset>

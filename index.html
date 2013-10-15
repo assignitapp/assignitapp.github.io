@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Burket">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="{EAV:6180462d08ceb865} New look. Assign It App Homepage New Dashboard This is the new day view. This shows all of the items that are happening and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,288 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/28/new-features-of-assign-it-app/">New Features of Assign It App</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-28T19:26:00-06:00" pubdate data-updated="true">Nov 28<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>{EAV:6180462d08ceb865}</p>
+
+<ol>
+<li>New look.</li>
+</ol>
+
+
+<p><img src="http://i.imgur.com/WExvK.jpg" alt="New Look" /></p>
+
+<p>Assign It App Homepage</p>
+
+<ol>
+<li>New Dashboard</li>
+</ol>
+
+
+<p>This is the new day view. This shows all of the items that are happening and due today. As shown below.</p>
+
+<p><img src="http://i.imgur.com/CwRQP.png" alt="New Look" /></p>
+
+<ol>
+<li>Day View</li>
+</ol>
+
+
+<p>Also there is another view on the dashboard.</p>
+
+<p><img src="http://i.imgur.com/C38uM.png" alt="New Look" /></p>
+
+<ol>
+<li>Lectures</li>
+</ol>
+
+
+<p>Lectures are when a class meets. This can a actual lecture or lab or other type of class meeting. Reoccurring lectures might be coming soon. The icon on the dashboard is below.</p>
+
+<p><img src="http://i.imgur.com/L18g3.png" alt="New Look" /></p>
+
+<ol>
+<li>Exams</li>
+</ol>
+
+
+<p>Exams are brand new. Exams are a new data type. An exam is test in a course. They will on the dashboard in light purple with A plus icon. As shown below.</p>
+
+<p><img src="http://i.imgur.com/yi3Id.png" alt="New Look" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/11/the-outage-and-upgrade-postmortem-for-august-11-2012/">The Outage and Upgrade Postmortem for August 11, 2012</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-11T19:21:00-05:00" pubdate data-updated="true">Aug 11<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The deploy I made tonight was filled with errors. Errors that didn&rsquo;t show up until production. The issue first started when I failed to start on time due my inability to find the way to update the counter cache column since it was Read-Only. It took until 9:20 PM CDT to get a solution down for that.</p>
+
+<p>The next issues start to arise from the hosting platform and production environment. This was due the fact that I thread-safe mode with caused issues with my rake task. This stopped me until about  9:48 PM CDT.</p>
+
+<p>The next issue I had was the counter cache column was not created as I thought in the first deploy. Fixing this took about 10 minutes. A fix for this problem was deployed at around 9:53 PM CDT.</p>
+
+<p>The next issue I had was the class name was not correct in the courses in the courses counter part of rake task. A fix for this issue was deployed around 10:03 PM CDT.</p>
+
+<p>Then I had another database column issue and this was fixed at 10:10 PM CDT.</p>
+
+<p>Then the rake task ran about 30 seconds and the downtime was done.</p>
+
+<p>Take a ways</p>
+
+<ol>
+<li>Proof your code</li>
+<li>Check for migrations</li>
+<li>Test rake tasks in staging first</li>
+</ol>
+
+
+<p>Paid costumers will receive a refund for 1 (one) day.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/07/the-outage-postmortem-for-july-6-2012/">The Outage Postmortem for July 6, 2012</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-07T15:11:00-05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>What Happened</h2>
+
+<p>On Friday, July 6, 2012 at 3:42 PM Central Daylight savings, CDT, time I found that I couldn&rsquo;t sign in to Assign It App. In some cases when signing in the site would give an error, a 500 status code. I did some investigating and found it was a site bug, not just me at round 5:12 PM CDT. I worked up a fix and deployed right away with out testing the patch. The patch was deployed around 5:21 PM. This fix did stop the, 500 status codes, but it always said that you didn&rsquo;t have the right email or password. After I found this out I started on another fix. Around 5:32 PM CDT I deployed the second fix. The second patch fix the issue at around 5:36 PM CDT.</p>
+
+<h2>Lessons Learned</h2>
+
+<p>The lesson I took from this is to test your code. Test all of it. Make sure your tests are passing. This will happen in feature releases.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/01/updates/">Updates</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-01T19:12:00-05:00" pubdate data-updated="true">Jun 1<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Assign It App is now 100% rewritten. The new version does remove some features but I think I is for the best. Here is the new look:</p>
+
+<p>image</p>
+
+<p>It still a work in progress. What is coming soon is being able to pay for Assign It App. If a paid account you can get more ways to remind you plus some other benefits that haven’t been announced. If you shoot me an email after you sign up for a paid account and give the following code:</p>
+
+<blockquote><p>IREADTHEASSIGNITAPPBLOG2012582145445</p></blockquote>
+
+<p>You will get 15% off for the 5 months of your subscription.</p>
+
+<p>Thanks for supporting Assign It App</p>
+
+<p>In case you curious here I tech I used:</p>
+
+<p>Language: English</p>
+
+<p>Programming Language: Ruby</p>
+
+<p>Web Framework: <a href="http://rubyonrails.org">Ruby on Rails</a></p>
+
+<p>Payments: <a href="http://stripe.com">Stripe</a></p>
+
+<p>Blog: Tumblr (and now Octopress)</p>
+
+<p>Devlopment OS: CentOS 6.2</p>
+
+<p>Hosting: <a href="http://heroku.com">Heroku</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/05/the-launch/">The Launch</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-05T08:09:00-05:00" pubdate data-updated="true">Jun 5<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Welcome!</p>
+
+<p>Hi, and welcome to the Assign It App Blog. Today I’m excited to tell you that Assign It App is planned to be launched sometime in August. We will release more details as they come out.</p>
+
+<p>For now good bye!</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +359,26 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/11/28/new-features-of-assign-it-app/">New Features of Assign It App</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/11/the-outage-and-upgrade-postmortem-for-august-11-2012/">The Outage and Upgrade Postmortem for August 11, 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/07/the-outage-postmortem-for-july-6-2012/">The Outage Postmortem for July 6, 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/01/updates/">Updates</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/05/the-launch/">The Launch</a>
+      </li>
     
   </ul>
 </section>

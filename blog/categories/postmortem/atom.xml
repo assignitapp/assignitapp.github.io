@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: postmortem | Assign It App Blog]]></title>
+  <link href="http://assignitapp.github.io/blog/categories/postmortem/atom.xml" rel="self"/>
+  <link href="http://assignitapp.github.io/"/>
+  <updated>2013-10-14T19:36:22-05:00</updated>
+  <id>http://assignitapp.github.io/</id>
+  <author>
+    <name><![CDATA[Matthew Burket]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Outage Postmortem for July 6, 2012]]></title>
+    <link href="http://assignitapp.github.io/blog/2012/07/07/the-outage-postmortem-for-july-6-2012/"/>
+    <updated>2012-07-07T15:11:00-05:00</updated>
+    <id>http://assignitapp.github.io/blog/2012/07/07/the-outage-postmortem-for-july-6-2012</id>
+    <content type="html"><![CDATA[<h2>What Happened</h2>
+
+<p>On Friday, July 6, 2012 at 3:42 PM Central Daylight savings, CDT, time I found that I couldn&rsquo;t sign in to Assign It App. In some cases when signing in the site would give an error, a 500 status code. I did some investigating and found it was a site bug, not just me at round 5:12 PM CDT. I worked up a fix and deployed right away with out testing the patch. The patch was deployed around 5:21 PM. This fix did stop the, 500 status codes, but it always said that you didn&rsquo;t have the right email or password. After I found this out I started on another fix. Around 5:32 PM CDT I deployed the second fix. The second patch fix the issue at around 5:36 PM CDT.</p>
+
+<h2>Lessons Learned</h2>
+
+<p>The lesson I took from this is to test your code. Test all of it. Make sure your tests are passing. This will happen in feature releases.</p>
+]]></content>
+  </entry>
+  
+</feed>
